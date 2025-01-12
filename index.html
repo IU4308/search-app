@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 class="title">Pokemon Search App</h1>
+        <div class="container">
+            <div class="card">
+                <div class="input-container">
+                    <label for="search-input">Search for Pokemon Name or ID:</label>
+                    <input type="text" id="search-input" required>
+                    <button type="button" id ="search-button">Search</button>
+                </div>
+                <div class="pokemon-container">
+                    <p id="name-id">
+                        <span id="pokemon-name"></span>
+                        <span id="pokemon-id"></span>
+                    </p>
+                    <p id="w-h">
+                        <span id="weight"></span>
+                        <span id="height"></span>
+                    </p>           
+                    <div id="img-container">
+                    </div>
+                    <p id="types">
+                        
+                    </p>
+                </div>
+                <div class="grid-container">
+                    <p class="left">Base</p>
+                    <p class="right">Stats</p>
+                    <p class="left">HP:</p>
+                    <p id="hp" class="right"></p>
+                    <p class="left">Attack:</p>
+                    <p id="attack" class="right"></p>
+                    <p class="left">Defense</p>
+                    <p id="defense" class="right"></p>
+                    <p class="left">Sp. Attack:</p>
+                    <p id="special-attack" class="right"></p>
+                    <p class="left">Sp. Defense:</p>
+                    <p id="special-defense" class="right"></p>
+                    <p class="left">Speed:</p>
+                    <p id="speed" class="right"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+:root {
+    --bg1: #0a1930;
+    --bg2: #152f57;
+    --bg3: #193763;
+    --white: #cdd8f8;
+    --red: rgb(160, 5, 5);
+    --green: #6fb5b3;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    background-color: var(--bg1);
+    color: var(--white);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.container {
+    border: 2px solid var(--white);
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.386);
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+label {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#search-input {
+    /* width: 80%; */
+    padding: 0.35rem 1rem;
+    border-radius: 10px;
+    background-color: var(--bg2);
+    border: 1px solid var(--white);
+    color: var(--white)
+}
+
+
+#search-button {
+    padding: 0.35rem 0.5rem;
+    border-radius: 20px;
+    background-color: var(--green);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+#search-button:hover {
+    opacity: 0.9
+}
+
+#search-button:active {
+    opacity: 0.6
+}
+
+.pokemon-container {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #0a193070;
+}
+
+#name-id {
+    text-transform: uppercase;
+}
+
+#pokemon-name,
+#weight {
+    margin-right: 0.5rem;
+}
+
+
+#name-id,
+#w-h,
+#types {
+    margin: 0.75rem 0;
+}
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.type {
+    background-color: var(--red);
+    color: black;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.75rem;
+}
+
+.grid-container p {
+    background-color: var(--bg3);
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
